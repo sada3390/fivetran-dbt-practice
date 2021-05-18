@@ -19,3 +19,6 @@ models:
             tests:
                 - unique
                 - not_null
+
+    - name: grade_level_analysis
+      description: "Analyzed view"
