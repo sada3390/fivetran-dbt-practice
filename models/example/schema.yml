@@ -1,24 +1,13 @@
 
 version: 2
 
+sources:
+  - name: fivetran_sf
+    database: FIVETRAN_DATABASE
+    schema: ATTENDANCE
+    tables:
+      - name: GRADE_LEVEL
+
 models:
-    - name: my_first_dbt_model
-      description: "A starter dbt model"
-      columns:
-          - name: id
-            description: "The primary key for this table"
-            tests:
-                - unique
-                - not_null
-
-    - name: my_second_dbt_model
-      description: "A starter dbt model"
-      columns:
-          - name: id
-            description: "The primary key for this table"
-            tests:
-                - unique
-                - not_null
-
     - name: grade_level_analysis
       description: "Analyzed view"
