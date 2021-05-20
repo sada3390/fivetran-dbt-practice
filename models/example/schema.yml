@@ -4,9 +4,9 @@ version: 2
 sources:
   - name: fivetran_sf
     database: FIVETRAN_DATABASE
-    schema: ATTENDANCE
+    schema: POSTGRES_GOOGLE_SHEETS
     tables:
-      - name: GRADE_LEVEL
+      - name: GRADE_LEVEL_P
 
 models:
     - name: grade_level_analysis
